@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  cache:
+    type: redis
+    host: localhost
+    port: 6379
+    redis:
+      time-to-live: 60000
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/statistics-db
+      auto-index-creation: true
+  jackson:
+    time-zone: UTC
+
+app:
+  data-update-interval: 300000
